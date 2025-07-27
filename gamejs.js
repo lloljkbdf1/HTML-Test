@@ -16,6 +16,6 @@ function ChangeText(event){
     event.target.style.backgroundColor="blue"
     event.target.style.color="darkblue"
     event.target.textContent="Click Me!"
-    }, 3000)
+    }, 1000)
 }
 Boxa.addEventListener("click",ChangeText)
