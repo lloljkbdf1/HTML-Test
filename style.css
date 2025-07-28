@@ -11,7 +11,6 @@ label{
      position: absolute;
     left: 40%;
     top: 25%;
-    overflow: hidden;
 }
 ul{
     list-style-type: none;
@@ -20,7 +19,6 @@ ul{
     font-size: 2em;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 li{
    background-color: rgb(0, 0, 50);
@@ -29,7 +27,6 @@ li{
     right: 0.05%;
     top: 0%;
     width: 200em;
-    overflow: hidden;
 }
 a:link{
     color: rgb(0, 145, 255);
@@ -45,7 +42,6 @@ div{
     position: absolute;
     left: 40%;
     top: 25%;
-    overflow: hidden;
 }
 @keyframes Wow{
     0% {left:615px;right:615px;}
@@ -68,7 +64,6 @@ div{
     border: 5px;
     border-style: solid;
     border-color: rgb(0, 0, 40);
-    overflow: hidden;
 }
 #ScoreHeading{
     -webkit-text-stroke-width: 1px;
@@ -79,7 +74,6 @@ div{
      position: absolute;
     left: 29%;
     top: 10%;
-    overflow: hidden;
 }
 #Score{
      -webkit-text-stroke-width: 1px;
@@ -90,12 +84,10 @@ div{
      position: absolute;
     left: 39.2%;
     top: 14.8%;
-    overflow: hidden;
 }
 .square{
     position: absolute;
     left: 40%;
     top: 40%;
     background-color:blue;
-    overflow: hidden;
 }
