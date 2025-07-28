@@ -59,6 +59,10 @@ div{
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    cursor: pointer;
+    border: 5px;
+    border-style: solid;
+    border-color: rgb(0, 0, 40);
 }
 #ScoreHeading{
     -webkit-text-stroke-width: 1px;
@@ -69,16 +73,6 @@ div{
      position: absolute;
     left: 29%;
     top: 10%;
-}
-#HighScore{
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: darkblue;
-    color: blue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3em;
-     position: absolute;
-    left: 29%;
-    top: 17%;
 }
 #Score{
      -webkit-text-stroke-width: 1px;

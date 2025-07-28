@@ -1,6 +1,11 @@
-const Boxa = document.getElementById("Box")
-const Score = document.getElementById("Score")
-let currentscore=parseInt(document.cookie)
+const Boxa=document.getElementById("Box")
+const Score=document.getElementById("Score")
+var currentscore=parseInt(document.cookie)
+if (currentscore<1){
+    var currentscore=0
+    document.cookie=currentscore
+    console.log(currentscore)
+}
 Score.textContent=currentscore
 w=window.innerWidth
 console.log(w)
