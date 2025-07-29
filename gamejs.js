@@ -1,6 +1,7 @@
 const Boxa=document.getElementById("Box")
 const Score=document.getElementById("Score")
-var currentscore=parseInt(document.cookie)
+var Check=0
+currentscore=parseInt(document.cookie)
 if (isNaN(document.cookie)||isNaN(currentscore)){
     var newscore=0
     document.cookie=newscore
@@ -8,8 +9,6 @@ if (isNaN(document.cookie)||isNaN(currentscore)){
     console.log(newscore)
 }
 Score.textContent=currentscore
-w=window.innerWidth
-console.log(w)
 function ChangeText(event){
     if (isNaN(document.cookie)||isNaN(currentscore)){
     var newscore=0
@@ -17,8 +16,10 @@ function ChangeText(event){
     currentscore=newscore
     console.log(newscore)
 }
+if (Check==0){
     currentscore=currentscore+1;
     document.cookie=currentscore
+    Check=1
     console.log(currentscore)
     event.target.style.backgroundColor="red"
     event.target.style.color="darkred"
@@ -28,6 +29,8 @@ function ChangeText(event){
     event.target.style.backgroundColor="blue"
     event.target.style.color="darkblue"
     event.target.textContent="Click Me!"
+    Check=0
     }, 1000)
 }
-Boxa.addEventListener("click",ChangeText)
+}
+Boxa.addEventListener("pointerdown",ChangeText)
